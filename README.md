@@ -2,6 +2,11 @@
 ML model for ASAG
 
 ## Objectives
+
+The objective of this task was to build, train and evaluate a machine learning model for automatic short anser grading (ASAG). The model aimed to achieve high grading accuracy and show robustness to linguistic challenges common to NLP tasks. Two datasets were provided: 
+
+- 
+
 The objectives of this task are as follows:
 - 
 
