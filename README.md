@@ -22,7 +22,9 @@ In this task, I aimed to achieve these objectives:
 
 ### ML Approaches 
 
-Multiple approaches were considered for this task, including a lexical approach, a semantic approach and a syntactic approach. Deep learning approaches were considered (after a brief review of some literature), but were left for future exploration given the time constraints of the task. Ultimately, an ensemble approach was chosen, in which key features were extracted from the training data (specifically the reference and student answers). A Random Forest Classifier was trained using the chosen features. 
+Multiple approaches were considered for this task, including a lexical approach, a semantic approach and a syntactic approach. Deep learning approaches were considered (after a brief review of some literature), but were left for future exploration given the time constraints of the task. 
+
+Ultimately, an ensemble approach was chosen, in which key features were extracted from the training data (specifically the reference and student answers). A Random Forest Classifier was trained using the chosen features. 
 
 
 
