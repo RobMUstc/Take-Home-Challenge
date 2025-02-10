@@ -22,7 +22,7 @@ In this task, I aimed to achieve these objectives:
 
 ### ML Approaches 
 
-Multiple approaches were considered for this task, including purely lexical, semantic approach and syntactic approaches. Ultimately, an ensemble approach was chosen, in which key features were extracted from the training data (specifically the reference and student answers). The correlation of these features was assessed against the target feature (grade of the student answer - the label_5way grade in the dataset). A Random Forest Classifier was trained using the chosen features. 
+Multiple approaches were considered for this task, including a lexical approach, a semantic approach and a syntactic approach. Ultimately, an ensemble approach was chosen, in which key features were extracted from the training data (specifically the reference and student answers). The correlation of these features was assessed against the target feature (grade of the student answer - the label_5way grade in the dataset). A Random Forest Classifier was trained using the chosen features. 
 
 The model was tested against a validation dataset (a subset of given training dataset, which was not involved in the training of the model). A grid search was performed to tune the hyperparameters.
 
