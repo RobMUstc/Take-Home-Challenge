@@ -31,9 +31,13 @@ Ultimately, an ensemble approach was chosen, in which key features were extracte
 
 
 ### Chosen Features
-- Presence of specific key words
-- Similarity to reference answers
-- Length difference
+
+The mix of chosen features aimed to prosecute the relevance, completeness and domain-specificity of the student answers. After some experimentation, the following features were extracted to train the Random Forest Classifier:
+
+- Cosine similarity between student and reference answers. This gives a semantic measure of similarity between both answers.
+- Length difference between student and reference answers. This gives a measure of completeness of the student's answer. 
+- Percentage of specific key words (from the question and reference answer) present in the student's answer. This gives a measure of the student's answer addressing key elements in the domain. 
+
 
 ## Workflow / Results
 
