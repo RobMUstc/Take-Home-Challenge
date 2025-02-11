@@ -43,6 +43,9 @@ The mix of chosen features aimed to prosecute the relevance, completeness and do
 
 ### Data Preprocessing
 - Stop words - do not remove
+- Considered fixing typos - computational cost
+- Lowercasing, removing whitespaces, removing punctuation
+- Handling negations, stemming?
 
 
 
