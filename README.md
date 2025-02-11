@@ -12,7 +12,7 @@ Two datasets were provided (accessible from https://huggingface.co/datasets/Atom
 
 In this task, I aimed to achieve these objectives:
 
-- Select an appropriate ML for the problem
+- Select an appropriate ML model for the problem
 - Follow ML best practices (e.g. appropriate data preparation, extracting meaningful features, proper model evaluation)
 - Deliver a reasonable baseline solution given a four hour development time constraint
 - Document and communicate my workflow clearly and concisely 
