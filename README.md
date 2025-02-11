@@ -46,6 +46,7 @@ The mix of chosen features aimed to prosecute the relevance, completeness and do
 - Considered fixing typos - computational cost
 - Lowercasing, removing whitespaces, removing punctuation
 - Handling negations, stemming?
+- Linguistic challenges not addressed: synonyms
 
 
 
