@@ -106,13 +106,13 @@ The tuned model was then used against the unseen test dataset.
 Classification report for Unseen Answers:
 
 
-|  | Accuracy | Precision | F1 score |
+|  | Precision | Recall | F1 score |
 | ------------- | ------------- | ------------- | ------------- |
-| correct  | Content Cell  | Content Cell  | Content Cell  |
-| partially_correct_incomplete  | Content Cell  | Content Cell  | Content Cell  |
-| contradictory  | Content Cell  | Content Cell  | Content Cell  |
-| irrelevant  | Content Cell  | Content Cell  | Content Cell  |
-| non_domain  | Content Cell  | Content Cell  | Content Cell  |
+| contradictory  | 0.33  | 0.28  | 0.30  |
+| correct | 0.59  | 0.74  | 0.66  |
+| irrelevant | 0.00  | 0.00  | 0.00  |
+| non_domain | 0.61  | 0.59  | 0.60  |
+| partially_correct_incomplete  | 0.40 | 0.34  | 0.37  |
 
 
 ### Error Analysis 
