@@ -1,5 +1,12 @@
 # Take-Home Challenge
 
+Alongside this README, the repo contains the following scripts:
+
+- _model_run_ : Code to execute the workflow. Imports preprocessed data and chosen features, trains and evaluates the model.
+- _feature_extraction_ : Extracts features from the preprocessed data.
+- _data_preprocessing_ : Preprocesses the data. 
+- _misc_work_ : Not to be run. Contains miscellaneous experimentation code for different stages of the  workflow. 
+
 ## Objectives
 
 The objective of this task was to build, train and evaluate a machine learning (ML) model for automatic short anser grading (ASAG).  
@@ -96,6 +103,16 @@ The tuned model was then used against the unseen test dataset.
 
 ### Key Results 
 
+Classification report for Unseen Answers:
+
+
+|  | Accuracy | Precision | F1 score |
+| ------------- | ------------- | ------------- | ------------- |
+| correct  | Content Cell  | Content Cell  | Content Cell  |
+| partially_correct_incomplete  | Content Cell  | Content Cell  | Content Cell  |
+| contradictory  | Content Cell  | Content Cell  | Content Cell  |
+| irrelevant  | Content Cell  | Content Cell  | Content Cell  |
+| non_domain  | Content Cell  | Content Cell  | Content Cell  |
 
 
 ### Error Analysis 
