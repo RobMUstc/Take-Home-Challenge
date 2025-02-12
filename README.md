@@ -162,4 +162,15 @@ Confusion Matrix for Unseen Questions:
 
 Overall, the model performed best when predicting correct and non_domain grade classes. It showed some ability to assess the completeness of an answer, but struggled to identify when an answer was irrelevant. The model was also unable to consistently identify contradictory answers, often grading these answers to be correct or partially_correct_incomplete.
 
+### Strengths and Weaknesses of Chosen Solution 
+
+Strengths:
+- 
+
+
+
+
 ## Concluding Remarks 
+
+Given the time constraint, the model presented is a reasonable baseline solution
+
