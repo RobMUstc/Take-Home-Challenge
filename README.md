@@ -164,13 +164,21 @@ Overall, the model performed best when predicting correct and non_domain grade c
 
 ### Strengths and Weaknesses of Chosen Solution 
 
-Strengths:
-- 
+Strengths of the chosen solution include:
 
+- Simplicity and effiency. Employing supervised learning using a Random Forest Classifier is interpretable and easily adjustable - ideal for a baseline solution.
+- Attempts to handle data imbalance and tracks overfitting.
+- Feature importance is easy to track.
+- Effective at capturing complex relationships between features.
 
+Weaknesses of the chosen solution include:
+
+- Predictions tend to bias majority grade classes.
+- Potential to become computationally expensive (particularly when hyperparameters are adjusted and features are recursively eliminated).
+- Nuanced language and complex linguistic features like negations and synonyms / similar phrases are not captured well.
 
 
 ## Concluding Remarks 
 
-Given the time constraint, the model presented is a reasonable baseline solution
+Given the time constraint, the model presented is a reasonable baseline solution.
 
