@@ -25,7 +25,7 @@ The target of this task was to accurately predict the grade classes of student a
 
 Multiple approaches were considered to assess the class of student answers, including a lexical approach, a semantic approach and a syntactic approach. Deep learning approaches were considered (after a brief review of some literature), but were left for future exploration given the time constraints of the task. 
 
-Ultimately, an ensemble approach was chosen, in which key features were extracted from the training data, focusing on a comparison between the reference and student answers. A Random Forest Classifier was trained with the chosen features. The Classifier was used to predict the grade class.
+Ultimately, an ensemble approach was chosen, in which key features were extracted from the training data, focusing on a comparison between the reference and student answers. A Random Forest Classifier was trained with the chosen features. The classifier was used to predict the grade class.
 
 
 
@@ -33,9 +33,9 @@ Ultimately, an ensemble approach was chosen, in which key features were extracte
 
 The mix of chosen features aimed to assess the relevance, completeness and domain-specificity of the student answers. After some experimentation, the following features were extracted to train the Random Forest Classifier:
 
-- Cosine similarity between student and reference answers. This gives a semantic measure of similarity between both answers.
-- Length difference between student and reference answers. This gives a measure of completeness of the student's answer. 
-- Percentage of specific key words (from the question and reference answer) present in the student's answer. This gives a measure of the student's answer addressing key elements in the domain. 
+- **Cosine similarity** between student and reference answers. This gives a semantic measure of similarity between both answers.
+- **Length difference** between student and reference answers. This gives a measure of completeness of the student's answer. 
+- **Keyword matching** (from the reference answer) present in the student's answer. This gives a measure of the student's answer addressing key elements in the domain. 
 
 
 ## Workflow / Results
