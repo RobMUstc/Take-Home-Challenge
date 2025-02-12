@@ -149,6 +149,7 @@ Confusion Matrix for Unseen Answers:
 Confusion Matrix for Unseen Questions:
 
 |  | **correct** | **partially_correct_incomplete** | **irrelevant** | **contradictory** | **non_domain**  |
+| --- | --- | --- | --- | --- | ---  |
 | **correct** | 163  | 25  | 2  | 31  | 0  |
 | **partially_correct_incomplete**  | 50 | 48 | 4  | 37  | 4  |
 | **irrelevant** | 5  | 7  | 0  | 7  | 1  |
