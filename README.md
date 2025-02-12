@@ -16,11 +16,12 @@ Two datasets were provided (accessible from https://huggingface.co/datasets/Atom
 - A training data set containing over 10,000 examples of questions, reference answers and student answers triples graded by domain experts.
 - A test data set containing unseen questions and unseen answers.
 
-In this task, I aimed to achieve these objectives:
+This task aimed to achieve these objectives:
 
 - Select an appropriate ML model for the problem.
 - Follow ML best practices (e.g. appropriate data preparation, extracting meaningful features, proper model evaluation).
 - Deliver a reasonable baseline solution given a four hour development time constraint.
+- Identify opportunities for future improvement.
 - Document and communicate my workflow clearly and concisely.
 
 
