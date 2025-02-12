@@ -104,7 +104,7 @@ The tuned model was then used against the unseen test dataset.
 
 ### Key Results 
 
-Key results are captured in the classification reports for the test sets. Judging against results presented in https://aclanthology.org/S13-2045.pdf, this model appears to be a reasonable baseline solution.
+Key results are captured in the classification reports for the test sets. The model appears to be a reasonable baseline solution  (judging against results presented in https://aclanthology.org/S13-2045.pdf).
 
 Classification report for Unseen Answers:
 
