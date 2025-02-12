@@ -25,13 +25,13 @@ The target of this task was to accurately predict the grade classes of student a
 
 Multiple approaches were considered to assess the class of student answers, including a lexical approach, a semantic approach and a syntactic approach. Deep learning approaches were considered (after a brief review of some literature), but were left for future exploration given the time constraints of the task. 
 
-Ultimately, an ensemble approach was chosen, in which key features were extracted from the training data, focusing on a comparison between the reference and student answers. A Random Forest Classifier was trained with the chosen features. The classifier was used to predict the grade class.
+Ultimately, an ensemble approach was chosen, in which key features were extracted from the training data, focusing on a comparison between the reference and student answers. A Random Forest Classifier (RFC) was trained with the chosen features. The classifier was used to predict the grade class.
 
 
 
 ### Chosen Features
 
-The mix of chosen features aimed to assess the relevance, completeness and domain-specificity of the student answers. After some experimentation, the following features were extracted to train the Random Forest Classifier:
+The mix of chosen features aimed to assess the relevance, completeness and domain-specificity of the student answers. After some experimentation, the following features were extracted to train the RFC:
 
 - **Cosine similarity** between student and reference answers. This gives a semantic measure of similarity between both answers.
 - **Length difference** between student and reference answers. This gives a measure of completeness of the student's answer. 
@@ -73,7 +73,7 @@ Oversampling using the Synthetic Minority Oversampling Technique (SMOTE) was tes
 
 Undersampling by taking a subset of the training data was also tested. It was not applied as the remaining subset was judged too small for model training. 
 
-Ultimately, balanced class weights were calculated and used as a parameter in the Random Forest Classifier.
+Ultimately, balanced class weights were calculated and used as a parameter in the RFC.
 
 
 - Ignore variation in question type/module
@@ -81,7 +81,13 @@ Ultimately, balanced class weights were calculated and used as a parameter in th
 
 
 ### Model Training 
-- Dealing with data imbalance: SMOTE oversampling, balancing class weights
+
+Before fitting the RFC, a validation dataset was split from the training dataset (20% validation, 80% training). This would allow us to assess if the model was overfitting the training dataset. 
+
+The RFC was fitted using the training dataset. Feature importance scores were analysed
+
+
+
 - Feature to train on: Cosine similarity, jacard similarity, dice coefficient
   
 The correlation of these features was assessed against the target feature (grade of the student answer - the label_5way grade in the dataset)
