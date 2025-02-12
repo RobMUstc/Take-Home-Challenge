@@ -109,7 +109,7 @@ Classification report for Unseen Answers:
 
 
 |  | Precision | Recall | F1 score |
-| ------------- | ------------- | ------------- | ------------- |
+| :-------------: | :-------------: | :-------------: | :-------------: |
 | contradictory  | 0.33  | 0.28  | 0.30  |
 | correct | 0.59  | 0.74  | 0.66  |
 | irrelevant | 0.00  | 0.00  | 0.00  |
@@ -124,7 +124,7 @@ Classification report for Unseen Questions:
 
 
 |  | Precision | Recall | F1 score |
-| ------------- | ------------- | ------------- | ------------- |
+| :-------------: | :-------------: | :-------------: | :-------------: |
 | contradictory  | 0.40  | 0.34  | 0.36  |
 | correct | 0.61  | 0.55  | 0.58  |
 | irrelevant | 0.23  | 0.12  | 0.15  |
@@ -140,6 +140,7 @@ Classification report for Unseen Questions:
 Confusion Matrix for Unseen Answers:
 
 |  | **correct** | **partially_correct_incomplete** | **irrelevant** | **contradictory** | **non_domain**  |
+| :---: | :---: | :---: | :---: | :---: | :---:  |
 | **correct** | 163  | 25  | 2  | 31  | 0  |
 | **partially_correct_incomplete**  | 50 | 48 | 4  | 37  | 4  |
 | **irrelevant** | 5  | 7  | 0  | 7  | 1  |
@@ -149,7 +150,7 @@ Confusion Matrix for Unseen Answers:
 Confusion Matrix for Unseen Questions:
 
 |  | **correct** | **partially_correct_incomplete** | **irrelevant** | **contradictory** | **non_domain**  |
-| --- | --- | --- | --- | --- | ---  |
+| :---: | :---: | :---: | :---: | :---: | :---:  |
 | **correct** | 163  | 25  | 2  | 31  | 0  |
 | **partially_correct_incomplete**  | 50 | 48 | 4  | 37  | 4  |
 | **irrelevant** | 5  | 7  | 0  | 7  | 1  |
