@@ -29,7 +29,7 @@ This task aimed to achieve these objectives:
 
 ### ML Approaches 
 
-The target of this task was to accurately predict the grade classes of student answers in the test dataset. As such, this was considered a classification problem.
+The goal of this task was to accurately predict the grade classes of student answers in the test dataset. As such, this was considered a classification problem.
 
 Multiple approaches were considered to assess the class of student answers, including a lexical approach, a semantic approach and a syntactic approach. Deep learning approaches were considered (after a brief review of some literature), but were left for future exploration given the time constraints of the task. 
 
