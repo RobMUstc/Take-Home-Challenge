@@ -2,7 +2,7 @@
 
 Alongside this README, the repo contains the following scripts:
 
-- _model_run_ : Code to execute the workflow. Imports preprocessed data and chosen features, trains and evaluates the model.
+- _model_run_ : Code to execute the workflow. Imports preprocessed data and chosen features. Trains and evaluates the model.
 - _feature_extraction_ : Extracts features from the preprocessed data.
 - _data_preprocessing_ : Preprocesses the data. 
 - _misc_work_ : Not to be run. Contains miscellaneous experimentation code for different stages of the  workflow. 
