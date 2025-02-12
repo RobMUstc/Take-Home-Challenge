@@ -193,5 +193,5 @@ With more time and resources, there are a number of opportunities to improve the
 - Enhance keyword matching by considering synonyms and similar phrases.
 - Augment the data with rephrased questions or back-translation to improve the model's robustness to linguistic variations.
 
-By pursuing these opportunities, this model will likely improve, enabling a more accurate and consistent solution to this ASAG system. 
+By pursuing these opportunities, this model will likely improve, enabling a more accurate and consistent solution for this ASAG system. 
 
