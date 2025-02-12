@@ -47,6 +47,7 @@ The mix of chosen features aimed to prosecute the relevance, completeness and do
 - Lowercasing, removing whitespaces, removing punctuation
 - Handling negations, stemming?
 - Linguistic challenges not addressed: synonyms
+- Ignore variation in question type/module
 
 
 
@@ -59,6 +60,8 @@ The correlation of these features was assessed against the target feature (grade
 The model was tested against a validation dataset (a subset of given training dataset, which was not involved in the training of the model). A grid search was performed to tune the hyperparameters.
 
 ### Key Results 
+
+
 
 ### Error Analysis 
 - Pearson correlation test
