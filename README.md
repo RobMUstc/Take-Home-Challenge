@@ -174,11 +174,23 @@ Strengths of the chosen solution include:
 Weaknesses of the chosen solution include:
 
 - Predictions tend to bias majority grade classes.
+- Features are engineered through comparison between answer sets. Parameters around the questions were not explored. 
 - Potential to become computationally expensive (particularly when hyperparameters are adjusted and features are recursively eliminated).
 - Nuanced language and complex linguistic features like negations and synonyms / similar phrases are not captured well.
 
 
 ## Concluding Remarks 
 
-Given the time constraint, the model presented is a reasonable baseline solution.
+Given the time constraint, the model presented is a reasonable baseline solution. The workflow is logical and the results are interpretable. 
+
+With more time and resources, there are a number of opportunities to improve the presented solution including: 
+
+- Incorporate deep learning models to better handle semantic meaning. Use pre-trained models (like BERT) to capture semantic meaning at a deeper level.
+- Further testing to better handle the class imbalance.
+- Further testing to find the optimal hyperparameters for the classifier.
+- More explicitly define domain-specific features. Assess student answers against domain-specific features contained in the question.
+- Enhance keyword matching by considering synonyms and similar phrases.
+- Augment the data with rephrased questions or back-translation to improve the model's robustness to linguistic variations.
+
+By pursuing these opportunities, this model will likely improve, enabling a more accurate and consistent solution to this ASAG system. 
 
