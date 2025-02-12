@@ -136,6 +136,24 @@ Classification report for Unseen Questions:
 
 
 ### Error Analysis 
-- Pearson correlation test
+
+Confusion Matrix for Unseen Answers:
+
+|  | **correct** | **partially_correct_incomplete** | **irrelevant** | **contradictory** | **non_domain**  |
+| **correct** | 163  | 25  | 2  | 31  | 0  |
+| **partially_correct_incomplete**  | 50 | 48 | 4  | 37  | 4  |
+| **irrelevant** | 5  | 7  | 0  | 7  | 1  |
+| **contradictory**| 55  | 36  | 5  | 40  | 6 |
+| **non_domain**  | 2 | 3  | 0  | 7  | 17 |
+
+Confusion Matrix for Unseen Questions:
+
+|  | **correct** | **partially_correct_incomplete** | **irrelevant** | **contradictory** | **non_domain**  |
+| **correct** | 163  | 25  | 2  | 31  | 0  |
+| **partially_correct_incomplete**  | 50 | 48 | 4  | 37  | 4  |
+| **irrelevant** | 5  | 7  | 0  | 7  | 1  |
+| **contradictory**| 55  | 36  | 5  | 40  | 6 |
+| **non_domain**  | 2 | 3  | 0  | 7  | 17 |
+
 
 ## Concluding Remarks 
