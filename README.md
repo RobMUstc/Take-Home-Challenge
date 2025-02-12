@@ -96,7 +96,7 @@ Some possible features were extracted, including cosine similarity, Jaccard simi
 The RFC was fitted with different combinations of these features. Feature importance scores were analysed and recursive feature elimination was performed. The resulting choice of features to train the Random Forest Classifier was - **Cosine similarity**, **Part of speech (POS) tags overlap**, **Length difference**, **Keyword overlap**.  
 
 The model was tested against a validation dataset. A grid search was performed to tune the hyperparameters. The default hyperparameters were adopted in the model presented (find
-source code for the grid search in the _misc work_ script).
+source code for the grid search in the _misc_work_ script).
 
 The tuned model was then used against the unseen test dataset.
 
@@ -160,6 +160,6 @@ Confusion Matrix for Unseen Questions:
 | **non_domain**  | 0 | 1  | 1  | 14  | 25 |
 
 
-Overall, the model performed best when predicting 
+Overall, the model performed best when predicting correct and non_domain grade classes. It showed some ability to assess the completeness of an answer, but struggled to identify when an answer was irrelevant. The model was also unable to consistently identify contradictory answers, often grading these answers to be correct or partially_correct_incomplete.
 
 ## Concluding Remarks 
