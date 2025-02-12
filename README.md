@@ -103,7 +103,7 @@ The tuned model was then used against the unseen test dataset.
 
 ### Key Results 
 
-Key results are captured in the classification reports for the test sets.
+Key results are captured in the classification reports for the test sets. Judging against results presented in https://aclanthology.org/S13-2045.pdf, this model appears to be a reasonable baseline solution.
 
 Classification report for Unseen Answers:
 
@@ -159,5 +159,7 @@ Confusion Matrix for Unseen Questions:
 | **contradictory**| 74  | 79  | 5  | 87  | 14 |
 | **non_domain**  | 0 | 1  | 1  | 14  | 25 |
 
+
+Overall, the model performed best when predicting 
 
 ## Concluding Remarks 
