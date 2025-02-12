@@ -34,7 +34,7 @@ Ultimately, an ensemble approach was chosen, in which key features were extracte
 The mix of chosen features aimed to assess the relevance, completeness and domain-specificity of the student answers. After some experimentation, the following features were extracted to train the RFC:
 
 - **Cosine similarity** between student and reference answers. This gives a semantic measure of similarity between the answers.
-- **Part of speech (POS) overlap** between student and reference answers. This gives a measure of structure similarity between the answers.
+- **Part of speech (POS) tags overlap** between student and reference answers. This gives a measure of structure similarity between the answers.
 - **Length difference** between student and reference answers. This gives a measure of completeness of the student's answer. 
 - **Keyword overlap** (from the reference answer) present in the student's answer. This gives a measure of the student's answer addressing key elements in the domain. 
 
@@ -43,7 +43,7 @@ The mix of chosen features aimed to assess the relevance, completeness and domai
 
 ### Data Preprocessing
 
-Various preprocessing steps were performed to clean the data for feature extraction and proper model evaluation. The corresponding source code can be found in the data_preprocessing script.
+Various preprocessing steps were performed to clean the data for feature extraction and proper model evaluation. The corresponding source code can be found in the _data_preprocessing_ script.
 
 The text in the reference and student answers were cleaned using the following simple techniques:
 
@@ -76,24 +76,23 @@ Undersampling by taking a subset of the training data was also tested. It was no
 
 Ultimately, balanced class weights were calculated and used as a parameter in the RFC.
 
-
-- Ignore variation in question type/module
+Analysis was also done to assess the imbalance in grades across different question types and modules. These differences were found to be negligible. 
 
 
 
 ### Model Training 
 
-Before fitting the RFC, a validation dataset was split from the training dataset (20% validation, 80% training). This would allow us to assess if the model was overfitting the training dataset. 
+Before fitting the RFC, a validation dataset was split from the training dataset (20% validation, 80% training). This allowed an assessment of whether the model overfitting the training dataset. 
 
-The RFC was fitted using the training dataset. Feature importance scores were analysed
+Some possible features were extracted, including cosine similarity, Jaccard similarity, POS tags overlap, length difference, keyword overlap, contradiction score (see details and source code in the _feature_extraction_ script). Feature correlations with the grade classes were computed to get an initial sense of importance. Feature correlations with each other were also computed to flag possible overlap / overfitting. It was found that cosine similarity and Jaccard similarity were strongly correlated (no surprise...) and so only one would be chosen as a feature.  
 
+The RFC was fitted with different combinations of these features. Feature importance scores were analysed and recursive feature elimination was performed. The resulting choice of features to train the Random Forest Classifier was - **Cosine similarity**, **Part of speech (POS) tags overlap**, **Length difference**, **Keyword overlap**.  
 
+The model was tested against a validation dataset. A grid search was performed to tune the hyperparameters. The default hyperparameters were adopted in the model presented (find
+source code for the grid search in the _misc work_ script).
 
-- Feature to train on: Cosine similarity, jacard similarity, dice coefficient
-  
-The correlation of these features was assessed against the target feature (grade of the student answer - the label_5way grade in the dataset)
+The tuned model was then used against the unseen test dataset.
 
-The model was tested against a validation dataset (a subset of given training dataset, which was not involved in the training of the model). A grid search was performed to tune the hyperparameters.
 
 ### Key Results 
 
