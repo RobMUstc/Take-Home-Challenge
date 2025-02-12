@@ -113,6 +113,22 @@ Classification report for Unseen Answers:
 | irrelevant | 0.00  | 0.00  | 0.00  |
 | non_domain | 0.61  | 0.59  | 0.60  |
 | partially_correct_incomplete  | 0.40 | 0.34  | 0.37  |
+| accuracy  |  |   | 0.48  |
+| weighted avg  | 0.46 | 0.48  | 0.46  |
+
+
+Classification report for Unseen Questions:
+
+
+|  | Precision | Recall | F1 score |
+| ------------- | ------------- | ------------- | ------------- |
+| contradictory  | 0.40  | 0.34  | 0.36  |
+| correct | 0.61  | 0.55  | 0.58  |
+| irrelevant | 0.23  | 0.12  | 0.15  |
+| non_domain | 0.42  | 0.61  | 0.50  |
+| partially_correct_incomplete  | 0.30 | 0.41  | 0.35  |
+| accuracy  |  |   | 0.45 |
+| weighted avg  | 0.46 | 0.45 | 0.45 |
 
 
 ### Error Analysis 
