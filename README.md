@@ -66,6 +66,17 @@ Other preprocessing techniques were considered, but not committed to the present
 - Synonym matching. Judged as a useful addition and a future improvement to overcome a linguistic challenge common to NLP tasks. Not applied due to time constraints.
 
 
+### Dealing with Data Imbalance
+
+Various techniques were considered to deal with the imbalance in the grade classes in the training dataset. For proper evaluation, we need to train the model on a dataset balanced in the target feature (grade class). 
+
+Oversampling using the Synthetic Minority Oversampling Technique (SMOTE) was tested. It was not applied due to problems with overfitting the training dataset. 
+
+Undersampling by taking a subset of the training data was also tested. It was not applied as the remaining subset was judged too small for model training. 
+
+Ultimately, balanced class weights were calculated and used as a parameter in the Random Forest Classifier.
+
+
 - Ignore variation in question type/module
 
 
