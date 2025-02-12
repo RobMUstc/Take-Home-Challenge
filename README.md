@@ -59,11 +59,13 @@ Spelling typos in the student answers were also corrected, although the method u
 
 The five grade classes were numerically encoded, which was useful for assessing correlation between possible features and the grade classes. 
 
+Other preprocessing techniques were considered, but not committed to the presented solution:
+
+- Stop word removal. Given the brevity of many answers, this was not applied in the preprocessing stage. It did have targeted use in extracting the shared keyword feature. 
+- Stemming / lemmatisation. Judged as overkill for this task. 
+- Synonym matching. Judged as a useful addition and a future improvement to overcome a linguistic challenge common to NLP tasks. Not applied due to time constraints.
 
 
-- Stop words - do not remove
-- Handling negations, stemming?
-- Linguistic challenges not addressed: synonyms
 - Ignore variation in question type/module
 
 
