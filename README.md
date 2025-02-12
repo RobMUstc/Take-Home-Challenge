@@ -33,9 +33,10 @@ Ultimately, an ensemble approach was chosen, in which key features were extracte
 
 The mix of chosen features aimed to assess the relevance, completeness and domain-specificity of the student answers. After some experimentation, the following features were extracted to train the RFC:
 
-- **Cosine similarity** between student and reference answers. This gives a semantic measure of similarity between both answers.
+- **Cosine similarity** between student and reference answers. This gives a semantic measure of similarity between the answers.
+- **Part of speech (POS) overlap** between student and reference answers. This gives a measure of structure similarity between the answers.
 - **Length difference** between student and reference answers. This gives a measure of completeness of the student's answer. 
-- **Keyword matching** (from the reference answer) present in the student's answer. This gives a measure of the student's answer addressing key elements in the domain. 
+- **Keyword overlap** (from the reference answer) present in the student's answer. This gives a measure of the student's answer addressing key elements in the domain. 
 
 
 ## Workflow / Results
