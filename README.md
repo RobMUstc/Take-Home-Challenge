@@ -84,7 +84,7 @@ Undersampling by taking a subset of the training data was also tested. It was no
 
 Ultimately, balanced class weights were calculated and used as a parameter in the RFC.
 
-Analysis was also done to assess the imbalance in grades across different question types and modules. These differences were found to be negligible. 
+Analysis was also done to assess the imbalance in grades across different question types and modules. No significant imbalance was detected.
 
 
 
