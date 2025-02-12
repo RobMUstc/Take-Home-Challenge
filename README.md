@@ -1,4 +1,4 @@
-# Take-Home-Challenge
+# Take-Home Challenge
 
 ## Objectives
 
