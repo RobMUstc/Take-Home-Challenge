@@ -22,11 +22,11 @@ In this task, I aimed to achieve these objectives:
 
 ### ML Approaches 
 
-Multiple approaches were considered for this task, including a lexical approach, a semantic approach and a syntactic approach. Deep learning approaches were considered (after a brief review of some literature), but were left for future exploration given the time constraints of the task. 
+The target of this task was to accurately predict the grade classes of student answers in the test dataset. As such, this was considered a classification problem.
 
-Ultimately, an ensemble approach was chosen, in which key features were extracted from the training data (specifically the reference and student answers). A Random Forest Classifier was trained using the chosen features. 
+Multiple approaches were considered to assess the class of student answers, including a lexical approach, a semantic approach and a syntactic approach. Deep learning approaches were considered (after a brief review of some literature), but were left for future exploration given the time constraints of the task. 
 
-
+Ultimately, an ensemble approach was chosen, in which key features were extracted from the training data, focusing on a comparison between the reference and student answers. A Random Forest Classifier was trained with the chosen features. The Classifier was used to predict the grade class.
 
 
 
