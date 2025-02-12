@@ -43,7 +43,7 @@ The mix of chosen features aimed to assess the relevance, completeness and domai
 
 ### Data Preprocessing
 
-Various preprocessing steps were performed to clean the data for feature extraction and proper model evaluation. 
+Various preprocessing steps were performed to clean the data for feature extraction and proper model evaluation. The corresponding source code can be found in the data_preprocessing script.
 
 The text in the reference and student answers were cleaned using the following simple techniques:
 
