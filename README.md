@@ -32,7 +32,7 @@ Ultimately, an ensemble approach was chosen, in which key features were extracte
 
 ### Chosen Features
 
-The mix of chosen features aimed to prosecute the relevance, completeness and domain-specificity of the student answers. After some experimentation, the following features were extracted to train the Random Forest Classifier:
+The mix of chosen features aimed to assess the relevance, completeness and domain-specificity of the student answers. After some experimentation, the following features were extracted to train the Random Forest Classifier:
 
 - Cosine similarity between student and reference answers. This gives a semantic measure of similarity between both answers.
 - Length difference between student and reference answers. This gives a measure of completeness of the student's answer. 
@@ -42,9 +42,26 @@ The mix of chosen features aimed to prosecute the relevance, completeness and do
 ## Workflow / Results
 
 ### Data Preprocessing
+
+Various preprocessing steps were performed to clean the data for feature extraction and proper model evaluation. 
+
+The text in the reference and student answers were cleaned using the following simple techniques:
+
+- Removing whitespaces
+- Removing punctuation
+- Lowercasing
+
+A special token <BULB_A> was created for the circumstance when the letter 'a' followed the word 'bulb' or 'bulbs'. Exploration of the data showed in the 'SwitchesBulbsParallel' module, 'a' often referred to a 'bulb' labelled 'a'. The token was created to differentiate between this use and the use of 'a' in common language. No other special tokens were created, although a deeper analysis of the data with more time could reveal the need for another. 
+
+For the reference answers in the training dataset, those classed as 'MINIMAL' were replaced with the 'BEST' answer for the corresponding question. Given all reference answers in the test dataset were classed as 'BEST', we want to train the model using the 'BEST' for meaningful feature extraction and proper evaluation. 
+
+Spelling typos in the student answers were also corrected, although the method used proved to be computationally costly. It was assumed the 'BEST' reference answers contained no typos.
+
+The five grade classes were numerically encoded, which was useful for assessing correlation between possible features and the grade classes. 
+
+
+
 - Stop words - do not remove
-- Considered fixing typos - computational cost
-- Lowercasing, removing whitespaces, removing punctuation
 - Handling negations, stemming?
 - Linguistic challenges not addressed: synonyms
 - Ignore variation in question type/module
